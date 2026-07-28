@@ -25,7 +25,6 @@ jobs:
 
       - name: Ver el contexto de ejecución
         run: |
-          Commpile xxx test
           echo "Sistema operativo del runner : $RUNNER_OS"
           echo "Repositorio                  : $GITHUB_REPOSITORY"
           echo "Rama o tag                   : $GITHUB_REF_NAME"
@@ -34,6 +33,7 @@ jobs:
 
       - name: Escribir en el resumen del run
         run: |
+          prueba xxx
           echo "### Mi primer workflow" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "Ejecutado por **$GITHUB_ACTOR** sobre la rama \`$GITHUB_REF_NAME\`." >> "$GITHUB_STEP_SUMMARY"
